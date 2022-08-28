@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wen.mapper.ScoreMapper">
+    <!--findAsQuery-->
+    <select id="findAsQuery" resultType="score">
+        select * from xpu where year = #{param1} and major = #{param2}
+    </select>
+
+    <select id="findAll" resultType="score">
+        select * from xpu
+    </select>
+</mapper>
